@@ -10,7 +10,7 @@ const Page = () => {
     const handleMainButtonClick = useCallback(() => {
         // telegram.sendData(JSON.stringify({ counter }))
         telegram.showAlert(`You clicked ${counter} times!`)
-        // telegram.openLink('https://pay.ababank.com/sZd3YizQDATmqSGm6')
+        telegram.openLink('https://pay.ababank.com/sZd3YizQDATmqSGm6')
     }, [counter])
 
     useEffect(() => {
