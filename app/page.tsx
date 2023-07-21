@@ -10,11 +10,12 @@ const Page = () => {
     const handleMainButtonClick = useCallback(() => {
         // telegram.sendData(JSON.stringify({ counter }))
         telegram.showAlert(`You clicked ${counter} times!`)
+        telegram.openLink('https://pay.ababank.com/sZd3YizQDATmqSGm6')
     }, [counter])
 
     useEffect(() => {
         telegram.MainButton.setParams({
-            text: 'CLICK ON ME',
+            text: 'Pay',
             is_active: true,
             is_visible: true
         })
@@ -51,7 +52,9 @@ const Page = () => {
                 ))
             }
 
-            <button onClick={() => setCounter( counter + 1)}>
+            <button style={{
+                backgroundColor: "#RRGGBB"
+            }} onClick={() => setCounter( counter + 1)}>
                 Click me
             </button>
         </div>
