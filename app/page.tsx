@@ -52,9 +52,7 @@ const Page = () => {
                 ))
             }
 
-            <button style={{
-                backgroundColor: "#RRGGBB"
-            }} onClick={() => setCounter( counter + 1)}>
+            <button onClick={() => setCounter( counter + 1)}>
                 Click me
             </button>
         </div>
